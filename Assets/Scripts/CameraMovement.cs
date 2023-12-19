@@ -1,10 +1,8 @@
 using UnityEngine;
-
 public class CameraMovement:MonoBehaviour
 {
     [SerializeField] private Transform _ballTransform;
     private Transform _cameraTransform;
-
     private void Awake ()
     {
         _cameraTransform = this.gameObject.transform;

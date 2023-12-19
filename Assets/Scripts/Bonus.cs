@@ -2,15 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class Bonus : MonoBehaviour
 {
     public ParticleSystem captureEffect;
     public GameObject panelWithText;
     public GameObject coin;
     public GameObject lucky;
-
-
     public void Trigger (GameObject trigger)
     {
         if(trigger.CompareTag("ball"))
@@ -22,7 +19,6 @@ public class Bonus : MonoBehaviour
             Invoke("DestroyBall", 3f);
         }
     }
-
     public void DestroyBall ()
     {
         panelWithText.SetActive(false);

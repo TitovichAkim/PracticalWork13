@@ -1,5 +1,4 @@
 using UnityEngine;
-
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody playerRigidbody;
@@ -8,7 +7,6 @@ public class PlayerMovement : MonoBehaviour
     {
         playerRigidbody = GetComponent<Rigidbody>();
     }
-
     public void MoveCharacter (Vector3 movement)
     {
         playerRigidbody.AddForce(movement * speed);
